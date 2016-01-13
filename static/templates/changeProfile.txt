@@ -1,0 +1,4 @@
+{% trans %}ChangeProfileMessage{% endtrans %}
+{% trans %}ClickChangeProfileLink{% endtrans %}:
+
+{{ link }}

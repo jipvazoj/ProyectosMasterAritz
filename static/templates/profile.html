@@ -1,0 +1,35 @@
+{% extends "static/templates/base.html" %}
+{% block title %}{{ user.name }} - {% trans %}Profile{% endtrans %}{% endblock %}
+{% block headParams %}
+    <link rel="stylesheet" type="text/css" href="/stylesheet/profile.css"/>
+    <script type="text/javascript" src="/js/profile.js"></script>
+    <meta id="trans"
+          data-email-send="{% trans %}ChangeProfileEmailSend{% endtrans %}"
+    />
+    <meta id="userinfo" data-user-id="{{ user.key.id() }}"/>
+{% endblock %}
+{% block content %}
+    <div id="infobox">
+    <div id="profilePhoto">
+        {% if user.photo != None and profilePhotoAllowed %}
+        <img src="/api/photo/download/{{ user.photo }}"/>
+        {% else %}
+        <img src="/images/anonymous.png"/>
+        {% endif %}
+    </div>
+    {% if session.get_role_level() == 3 %}
+        <div><input type="text" id="username" name="username" required="required" placeholder="{% trans %}Username{% endtrans %}" class="formBox" value="{{ user.name }}"/></div>
+        <div><input type="email" id="email" name="email" required="required" placeholder="{% trans %}Email{% endtrans %}" class="formBox" value="{{ user.email }}"/></div>
+    {% else %}
+        <label for="username">{% trans %}Username{% endtrans %}:</label><div id="username">{{ user.name }}</div>
+        <label for="username">{% trans %}Email{% endtrans %}:</label><div id="email">{{ user.email }}</div>
+    {% endif %}
+    {% if user.key.id() == session.get_id() %}
+        <div><button id="requestChangeProfile" class="requestButton">{% trans %}RequestChangeProfile{% endtrans %}</button></div>
+    {% endif %}
+    </div>
+    <div id="albumContainer">
+
+    </div>
+{% endblock %}
+{% block registerActive %}true{% endblock %}

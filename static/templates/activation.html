@@ -1,0 +1,11 @@
+{% extends "static/templates/base.html" %}
+{% block title %}{% trans %}Activation{% endtrans %}{% endblock %}
+{% block content %}
+<div>
+    {% if not error %}
+    {% trans %}YourAccountIsActivated{% endtrans %} {{ username }}.
+    {% else %}
+    <div id="errorMessage">{{ error }}</div>
+    {% endif %}
+</div>
+{% endblock %}

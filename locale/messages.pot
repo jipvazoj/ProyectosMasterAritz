@@ -1,0 +1,282 @@
+# Translations template for PROJECT.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-01-10 20:05+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: email_handler.py:42
+msgid "ConfirmRegistration"
+msgstr ""
+
+#: email_handler.py:58 static/templates/changeProfile.html:2
+msgid "ChangeProfile"
+msgstr ""
+
+#: kaixomundua.py:96 kaixomundua.py:193
+msgid "BadEmail."
+msgstr ""
+
+#: kaixomundua.py:100 kaixomundua.py:212
+msgid "PasswordMinLengthNotReached."
+msgstr ""
+
+#: kaixomundua.py:104 kaixomundua.py:216 static/templates/changeProfile.html:7
+#: static/templates/register.html:7 static/templates/registered.html:6
+msgid "PasswordMissmatch"
+msgstr ""
+
+#: kaixomundua.py:108 kaixomundua.py:179
+msgid "EmptyUsername."
+msgstr ""
+
+#: kaixomundua.py:113 kaixomundua.py:184 static/templates/changeProfile.html:9
+#: static/templates/register.html:8
+msgid "UsernameExists"
+msgstr ""
+
+#: kaixomundua.py:118 kaixomundua.py:198 static/templates/changeProfile.html:10
+#: static/templates/register.html:9
+msgid "EmailExists"
+msgstr ""
+
+#: kaixomundua.py:134
+msgid "DatabaseError"
+msgstr ""
+
+#: kaixomundua.py:320 kaixomundua.py:324
+msgid "InvalidUsernameOrPassword"
+msgstr ""
+
+#: kaixomundua.py:322
+msgid "AccountBlocked"
+msgstr ""
+
+#: kaixomundua.py:457
+msgid "AccountAlreadyActivated"
+msgstr ""
+
+#: kaixomundua.py:464
+msgid "ExpiredTokenOrNotExist"
+msgstr ""
+
+#: static/templates/activation.html:2 static/templates/users.html:23
+msgid "Activation"
+msgstr ""
+
+#: static/templates/activation.html:6
+msgid "YourAccountIsActivated"
+msgstr ""
+
+#: static/templates/base.html:33
+msgid "Index"
+msgstr ""
+
+#: static/templates/base.html:38 static/templates/photos.html:2
+msgid "Photos"
+msgstr ""
+
+#: static/templates/base.html:43 static/templates/map.html:2
+msgid "Map"
+msgstr ""
+
+#: static/templates/base.html:50 static/templates/login.html:2
+#: static/templates/login.html:18
+msgid "Login"
+msgstr ""
+
+#: static/templates/base.html:55 static/templates/register.html:2
+msgid "Register"
+msgstr ""
+
+#: static/templates/base.html:63 static/templates/profile.html:2
+msgid "Profile"
+msgstr ""
+
+#: static/templates/base.html:71 static/templates/users.html:2
+msgid "Users"
+msgstr ""
+
+#: static/templates/base.html:77 static/templates/logout.html:2
+msgid "Logout"
+msgstr ""
+
+#: static/templates/changeProfile.html:8
+msgid "PasswordMinimumLength"
+msgstr ""
+
+#: static/templates/changeProfile.html:20 static/templates/login.html:14
+#: static/templates/register.html:15
+msgid "Error"
+msgstr ""
+
+#: static/templates/changeProfile.html:22
+msgid "IfPasswordFieldIsEmptyItWontChange"
+msgstr ""
+
+#: static/templates/changeProfile.html:24 static/templates/install.html:8
+#: static/templates/login.html:16 static/templates/profile.html:21
+#: static/templates/profile.html:24 static/templates/register.html:19
+msgid "Username"
+msgstr ""
+
+#: static/templates/changeProfile.html:25 static/templates/install.html:9
+#: static/templates/login.html:17 static/templates/register.html:20
+msgid "Password"
+msgstr ""
+
+#: static/templates/changeProfile.html:26 static/templates/install.html:10
+#: static/templates/register.html:21
+msgid "PasswordRepeat"
+msgstr ""
+
+#: static/templates/changeProfile.html:27 static/templates/install.html:11
+#: static/templates/profile.html:22 static/templates/profile.html:25
+#: static/templates/register.html:22 static/templates/users.html:14
+msgid "Email"
+msgstr ""
+
+#: static/templates/changeProfile.html:28 static/templates/register.html:23
+msgid "UpdateProfile"
+msgstr ""
+
+#: static/templates/install.html:6
+msgid "AdminInstallAdvert"
+msgstr ""
+
+#: static/templates/install.html:12
+msgid "Install"
+msgstr ""
+
+#: static/templates/login.html:7 static/templates/profile.html:7
+msgid "ChangeProfileEmailSend"
+msgstr ""
+
+#: static/templates/login.html:20
+msgid "ForgottenPassword"
+msgstr ""
+
+#: static/templates/logout.html:6
+msgid "LogoutSuccessful"
+msgstr ""
+
+#: static/templates/map.html:11
+msgid "SearchSite"
+msgstr ""
+
+#: static/templates/photo.html:2 static/templates/users.html:20
+msgid "Photo"
+msgstr ""
+
+#: static/templates/photo.html:7
+msgid "WantToDeletePhoto"
+msgstr ""
+
+#: static/templates/photo.html:8
+msgid "SetAsBackgroundQuestion"
+msgstr ""
+
+#: static/templates/photo.html:9
+msgid "SetAsProfilePhotoQuestion"
+msgstr ""
+
+#: static/templates/photo.html:22
+msgid "PhotoName"
+msgstr ""
+
+#: static/templates/photo.html:27
+msgid "Public"
+msgstr ""
+
+#: static/templates/photo.html:30
+msgid "RestrictedUsers"
+msgstr ""
+
+#: static/templates/photo.html:33
+msgid "Private"
+msgstr ""
+
+#: static/templates/photo.html:66
+msgid "DeleteImage"
+msgstr ""
+
+#: static/templates/photo.html:72
+msgid "PhotoDoneBy"
+msgstr ""
+
+#: static/templates/photo.html:75
+msgid "PhotoDoneIn"
+msgstr ""
+
+#: static/templates/photo.html:78
+msgid "SetAsBackground"
+msgstr ""
+
+#: static/templates/photo.html:79
+msgid "SetAsProfilePhoto"
+msgstr ""
+
+#: static/templates/photos.html:12
+msgid "DropPhotoHere"
+msgstr ""
+
+#: static/templates/profile.html:28
+msgid "RequestChangeProfile"
+msgstr ""
+
+#: static/templates/register.html:17
+msgid "ChangePasswordNeedsConfirmation"
+msgstr ""
+
+#: static/templates/registered.html:2
+msgid "Registered"
+msgstr ""
+
+#: static/templates/registered.html:10
+msgid "Hello"
+msgstr ""
+
+#: static/templates/registered.html:10
+msgid "AccountCreated"
+msgstr ""
+
+#: static/templates/registered.html:11
+msgid "WelcomeToKaixoMundua"
+msgstr ""
+
+#: static/templates/registered.html:12
+msgid "EmailSendForActivation"
+msgstr ""
+
+#: static/templates/users.html:11
+msgid "Name"
+msgstr ""
+
+#: static/templates/users.html:17
+msgid "RegisterDate"
+msgstr ""
+
+#: static/templates/users.html:26
+msgid "Blocked"
+msgstr ""
+
+#: static/templates/welcome.html:2 static/templates/welcome.html:7
+msgid "HelloWorld"
+msgstr ""
+
+#: static/templates/welcome.html:5
+msgid "HelloAgain"
+msgstr ""
+

@@ -1,0 +1,15 @@
+{% block headParams %}
+<link rel="stylesheet" type="text/css" href="stylesheet/login.css"/>
+{% endblock %}
+{% block content %}
+<div>
+    {% trans %}AdminInstallAdvert{% endtrans %}
+    <form id="installForm" action="/install" method="post">
+        <div><input type="text" id="username" name="username" required="required" placeholder="{% trans %}Username{% endtrans %}" class="formBox"/></div>
+        <div><input type="password" id="password1" name="password1" pattern=".{6,}" required="required"  placeholder="{% trans %}Password{% endtrans %}" class="formBox"/></div>
+        <div><input type="password" id="password2" name="password2" pattern=".{6,}" required="required"  placeholder="{% trans %}PasswordRepeat{% endtrans %}" class="formBox"/></div>
+        <div><input type="email" id="email" name="email" required="required" placeholder="{% trans %}Email{% endtrans %}" class="formBox"/></div>
+        <div><input type="submit" id="submit" required="required" value="{% trans %}Install{% endtrans %}"/></div>
+    </form>
+</div>
+{% endblock %}

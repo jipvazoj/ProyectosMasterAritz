@@ -1,0 +1,24 @@
+application: haritzmedina-kaixomundua
+version: 4
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /stylesheet
+  static_dir: static/css
+
+- url: /images
+  static_dir: static/img
+
+- url: /js
+  static_dir: static/javascript
+
+- url: /.*
+  script: kaixomundua.app
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest

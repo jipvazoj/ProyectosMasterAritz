@@ -1,0 +1,16 @@
+{% extends "static/templates/base.html" %}
+{% block title %}{% trans %}Map{% endtrans %}{% endblock %}
+{% block headParams %}
+<link rel="stylesheet" type="text/css" href="stylesheet/map.css"/>
+<script src="https://maps.googleapis.com/maps/api/js?key={{googleApiKey}}" async defer></script>
+<script src="js/map.js" defer></script>
+{% endblock %}
+{% block content %}
+<div id="mapContent">
+    <div id="search">
+        <input id="searchInput" type="text" placeholder="{% trans %}SearchSite{% endtrans %}"/>
+    </div>
+    <div id="map"></div>
+</div>
+{% endblock %}
+{% block mapActive %}true{% endblock %}

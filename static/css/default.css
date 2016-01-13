@@ -1,0 +1,120 @@
+html{
+    background: url(../images/background.jpg) no-repeat;
+    background-size: fixed;
+    background-color: black;
+    height:100%;
+}
+
+::selection{
+    color: grey;
+    background: black;
+}
+
+body{
+    color: rgba(255,255,255,1);
+    font-size: large;
+    min-width: 750px;
+    height: calc(100% - 10px);
+    background-color: rgba(0,0,0,0.2);
+    padding: 5px;
+    margin: 0px;
+}
+
+header{
+    margin-bottom: 0px;
+}
+
+#head{
+    height: 60px;
+    color: rgba(255,255,255,1);
+}
+
+#headerTitle{
+    font-size: 40px;
+    min-width: 80%;
+    max-width: 80%;
+    height: 60px;
+    float:left;
+}
+
+#languages{
+    width:20%;
+    height: 60px;
+    float:left;
+}
+
+.language{
+    cursor: pointer;
+    float:left;
+    margin-left: 15px;
+}
+
+#menu{
+    overflow: hidden;
+    max-width: 100%;
+    height: 40px;
+    font-size: 20px;
+    float: none;
+}
+
+.tab{
+    background-color: rgba(150,150,150,0.6);
+    width: 10%;
+    min-width: 100px;
+    float: left;
+    margin-right:15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+
+}
+
+.tab:hover{
+    background-color: rgba(150,150,150,0.8);
+    cursor: pointer;
+}
+
+.tab[data-active=true]{
+    background-color: rgba(150,150,150,0.8);
+}
+
+#content{
+    background-color: rgba(150,150,150,0.8);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    min-height: 100px;
+    padding: 15px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.clickable{
+
+}
+
+#errorMessage{
+    color: rgba(230,100,100,1);
+    font-size: large;
+    background-color: rgba(50,50,50,0.8);
+    min-width: 150px;
+    width: inherit;
+    min-height: 20px;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+#logoutTab{
+    background-color:rgba(150,0,0,0.8);
+}
+
+#logoutTab:hover{
+    background-color:rgba(150,0,0,1);
+}

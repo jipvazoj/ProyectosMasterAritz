@@ -1,0 +1,9 @@
+# IntelliJ Idea project
+*.iml
+.idea/
+
+# Python
+*.pyc
+
+# Private keys
+*.key

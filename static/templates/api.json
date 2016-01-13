@@ -1,0 +1,14 @@
+{
+  "service": {
+    "name": "kaixo-mundua",
+    "feature": "{{feature}}"
+  },
+  "query":
+    "{{query}}",
+
+  "data":
+    {{data|safe}},
+
+  "result":
+    "{{result}}"
+}

@@ -1,0 +1,23 @@
+{% extends "static/templates/base.html" %}
+{% block title %}{% trans %}Login{% endtrans %}{% endblock %}
+{% block headParams %}
+<link rel="stylesheet" type="text/css" href="stylesheet/login.css"/>
+<script type="text/javascript" src="js/login.js"></script>
+    <meta id="trans"
+          data-email-send="{% trans %}ChangeProfileEmailSend{% endtrans %}"
+    />
+{% endblock %}
+{% block content %}
+<div>
+    <form id="loginForm" action="/login" method="post">
+        <div id="errorMessage">{% if error %}
+            {% trans %}Error{% endtrans %}: {{ error }}
+            {% endif %}</div>
+        <div><input type="text" id="username" name="username" required="required" placeholder="{% trans %}Username{% endtrans %}" class="formBox"/></div>
+        <div><input type="password" id="password" name="password" pattern=".{6,}" required="required"  placeholder="{% trans %}Password{% endtrans %}" class="formBox" autocomplete="off"/></div>
+        <div><input type="submit" id="submit" required="required" value="{% trans %}Login{% endtrans %}"/></div>
+    </form>
+    <div><a id="forgottenPassword">{% trans %}ForgottenPassword{% endtrans %}</a></div>
+</div>
+{% endblock %}
+{% block loginActive %}true{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "static/templates/base.html" %}
+{% block title %}{% trans %}Users{% endtrans %}{% endblock %}
+{% block headParams %}
+<link rel="stylesheet" type="text/css" href="stylesheet/users.css"/>
+<script type="text/javascript" src="js/users.js"></script>
+{% endblock %}
+{% block content %}
+<div id="users">
+    <div id="header">
+        <div class="headerCell cell">
+            {% trans %}Name{% endtrans %}
+        </div>
+        <div class="headerCell cell">
+            {% trans %}Email{% endtrans %}
+        </div>
+        <div class="headerCell cell">
+            {% trans %}RegisterDate{% endtrans %}
+        </div>
+        <div class="headerCell cell">
+            {% trans %}Photo{% endtrans %}
+        </div>
+        <div class="headerCell cell">
+            {% trans %}Activation{% endtrans %}
+        </div>
+        <div class="headerCell cell">
+            {% trans %}Blocked{% endtrans %}
+        </div>
+    </div>
+{% for user in users %}
+<div class="user" data-user-id="{{ user.key.id() }}">
+    <div class="dataCell cell"><a href="/profile/{{ user.key.id() }}">{{ user.name }}</a></div>
+    <div class="dataCell cell">{{ user.email }}</div>
+    <div class="dataCell cell">{{ user.date }}</div>
+    <div class="dataCell cell">{{ user.photo }}</div>
+    <div class="dataCell cell">
+        <input type="checkbox" class="role_level checkbox"
+               {%if user.role_level == 0 %}
+               disabled="disabled"
+               {%elif user.role_level == 2 %}
+               checked="checked"
+               {%elif user.role_level == 3 %}
+               disabled="disabled"
+               checked="checked"
+               {% endif %}
+        />
+    </div>
+    <div class="dataCell cell">
+        <input type="checkbox" class="blocked checkbox"
+                {% if user.attempts == 3 %}
+               checked="checked"
+                {% endif %}
+                {% if user.role_level == 3 %}
+               disabled="disabled"
+                {% endif %}
+        />
+    </div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}
+{% block usersActive %}true{% endblock %}

@@ -1,0 +1,4 @@
+{% trans %}ConfirmationEmailMessage{% endtrans %}
+{% trans %}ClickActivationLink{% endtrans %}:
+
+{{ link }}

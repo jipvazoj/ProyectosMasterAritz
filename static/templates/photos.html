@@ -1,0 +1,17 @@
+{% extends "static/templates/base.html" %}
+{% block title %}{% trans %}Photos{% endtrans %}{% endblock %}
+{% block headParams %}
+<link rel="stylesheet" type="text/css" href="/stylesheet/photos.css"/>
+<script type="text/javascript" src="/js/dropzone.js"></script>
+<script type="text/javascript" src="/js/photos.js"></script>
+{% endblock %}
+{% block content %}
+{% if session.get_role_level() >= 2 %}
+<div id="photo-dropzone" class="dz-message needsclick">
+    <img src="images/add.png"/><br/>
+    {% trans %}DropPhotoHere{% endtrans %}
+</div>
+{% endif %}
+<div id="photosContainer"></div>
+{% endblock %}
+{% block photosActive %}true{% endblock %}

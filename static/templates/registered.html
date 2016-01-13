@@ -1,0 +1,15 @@
+{% extends "static/templates/base.html" %}
+{% block title %}{% trans %}Registered{% endtrans %}{% endblock %}
+{% block headParams %}
+<link rel="stylesheet" type="text/css" href="stylesheet/register.css"/>
+<script type="text/javascript" src="js/register.js"></script>
+<meta id="trans" data-password-missmatch="{% trans %}PasswordMissmatch{% endtrans %}"/>
+{% endblock %}
+{% block content %}
+<div>
+    {% trans %}Hello{% endtrans %} {{ username }}. {% trans %}AccountCreated{% endtrans %}.
+    {% trans %}WelcomeToKaixoMundua{% endtrans %}
+    {% trans %}EmailSendForActivation{% endtrans %}.
+</div>
+{% endblock %}
+{% block registerActive %}true{% endblock %}

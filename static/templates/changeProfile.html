@@ -1,0 +1,32 @@
+{% extends "static/templates/base.html" %}
+{% block title %}{% trans %}ChangeProfile{% endtrans %}{% endblock %}
+{% block headParams %}
+    <link rel="stylesheet" type="text/css" href="/stylesheet/register.css"/>
+    <script type="text/javascript" src="/js/changeProfile.js"></script>
+    <meta id="trans"
+          data-password-missmatch="{% trans %}PasswordMissmatch{% endtrans %}"
+          data-password-minimum-length="{% trans %}PasswordMinimumLength{% endtrans %}"
+          data-username-used="{% trans %}UsernameExists{% endtrans %}"
+          data-email-used="{% trans %}EmailExists{% endtrans %}"
+    />
+    <meta id="user-data"
+          data-username="{{ user.name }}"
+          data-email="{{ user.email }}"
+    >
+{% endblock %}
+{% block content %}
+    <div>
+        <div id="errorMessage">{% if error %}
+            {% trans %}Error{% endtrans %}: {{ error }}
+        {% endif %}</div>
+        <div id="note">*{% trans %}IfPasswordFieldIsEmptyItWontChange{% endtrans %}</div>
+        <form id="register" method="post" action="/profile/change/{{ token_id }}">
+            <div><input type="text" id="username" name="username" required="required" placeholder="{% trans %}Username{% endtrans %}" class="formBox" value="{{ user.name }}"/></div>
+            <div><input type="password" id="password1" name="password1"  placeholder="{% trans %}Password{% endtrans %}" class="formBox" autocomplete="off"/></div>
+            <div><input type="password" id="password2" name="password2" placeholder="{% trans %}PasswordRepeat{% endtrans %}" class="formBox" autocomplete="off"/></div>
+            <div><input type="email" id="email" name="email" required="required" placeholder="{% trans %}Email{% endtrans %}" class="formBox" value="{{ user.email }}"/></div>
+            <div><input type="submit" id="submit" required="required" value="{% trans %}UpdateProfile{% endtrans %}"/></div>
+        </form>
+    </div>
+{% endblock %}
+{% block profileActive %}true{% endblock %}

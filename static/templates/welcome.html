@@ -1,0 +1,10 @@
+{% extends "static/templates/base.html" %}
+{% block title %}{% trans %}HelloWorld{% endtrans %}{% endblock %}
+{% block content %}
+{% if session.get_id() %}
+<h1>{% trans %}HelloAgain{% endtrans %} {{session.get_username()}}!</h1>
+{% else %}
+<h1>{% trans %}HelloWorld{% endtrans %}!</h1>
+{% endif %}
+{% endblock %}
+{% block welcomeActive %}true{% endblock %}

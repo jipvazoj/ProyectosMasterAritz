@@ -1,0 +1,328 @@
+# Basque (Spain) translations for PROJECT.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-01-10 20:05+0100\n"
+"PO-Revision-Date: 2015-12-02 16:48+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: eu_ES\n"
+"Language-Team: eu_ES <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.2.0\n"
+
+#: email_handler.py:42
+msgid "ConfirmRegistration"
+msgstr "Erregistroa baiestatu"
+
+#: email_handler.py:58 static/templates/changeProfile.html:2
+msgid "ChangeProfile"
+msgstr "Profila aldatu"
+
+#: kaixomundua.py:96 kaixomundua.py:193
+#, fuzzy
+msgid "BadEmail."
+msgstr "Email-a ez da egokia."
+
+#: kaixomundua.py:100 kaixomundua.py:212
+#, fuzzy
+msgid "PasswordMinLengthNotReached."
+msgstr "Pasahitsa gutxienez 6 karaktere eduki behar ditu."
+
+#: kaixomundua.py:104 kaixomundua.py:216 static/templates/changeProfile.html:7
+#: static/templates/register.html:7 static/templates/registered.html:6
+msgid "PasswordMissmatch"
+msgstr "Pasahitsak ez dira berdinak."
+
+#: kaixomundua.py:108 kaixomundua.py:179
+#, fuzzy
+msgid "EmptyUsername."
+msgstr "Erabiltzailea sartu behar da."
+
+#: kaixomundua.py:113 kaixomundua.py:184 static/templates/changeProfile.html:9
+#: static/templates/register.html:8
+#, fuzzy
+msgid "UsernameExists"
+msgstr "Erabiltzailearen izena hartuta dago."
+
+#: kaixomundua.py:118 kaixomundua.py:198 static/templates/changeProfile.html:10
+#: static/templates/register.html:9
+#, fuzzy
+msgid "EmailExists"
+msgstr "Email-a hartuta dago."
+
+#: kaixomundua.py:134
+msgid "DatabaseError"
+msgstr "Datu basearen errorea"
+
+#: kaixomundua.py:320 kaixomundua.py:324
+msgid "InvalidUsernameOrPassword"
+msgstr "Erabiltzailea edo passahitsa okerra"
+
+#: kaixomundua.py:322
+msgid "AccountBlocked"
+msgstr "Kontua blokeatuta"
+
+#: kaixomundua.py:457
+#, fuzzy
+msgid "AccountAlreadyActivated"
+msgstr "Zure kontua sortu egin da."
+
+#: kaixomundua.py:464
+msgid "ExpiredTokenOrNotExist"
+msgstr "Tokena ez du balio"
+
+#: static/templates/activation.html:2 static/templates/users.html:23
+msgid "Activation"
+msgstr "Aktibatu"
+
+#: static/templates/activation.html:6
+msgid "YourAccountIsActivated"
+msgstr "Zure kontua aktibatuta dago"
+
+#: static/templates/base.html:33
+msgid "Index"
+msgstr "Hasiera"
+
+#: static/templates/base.html:38 static/templates/photos.html:2
+#, fuzzy
+msgid "Photos"
+msgstr "Argazkia"
+
+#: static/templates/base.html:43 static/templates/map.html:2
+msgid "Map"
+msgstr "Mapa"
+
+#: static/templates/base.html:50 static/templates/login.html:2
+#: static/templates/login.html:18
+msgid "Login"
+msgstr "Saioa hasi"
+
+#: static/templates/base.html:55 static/templates/register.html:2
+msgid "Register"
+msgstr "Erregistratu"
+
+#: static/templates/base.html:63 static/templates/profile.html:2
+msgid "Profile"
+msgstr "Profila"
+
+#: static/templates/base.html:71 static/templates/users.html:2
+msgid "Users"
+msgstr "Erabiltzaileak"
+
+#: static/templates/base.html:77 static/templates/logout.html:2
+msgid "Logout"
+msgstr "Saioa amaitu"
+
+#: static/templates/changeProfile.html:8
+msgid "PasswordMinimumLength"
+msgstr ""
+
+#: static/templates/changeProfile.html:20 static/templates/login.html:14
+#: static/templates/register.html:15
+msgid "Error"
+msgstr "Errorea"
+
+#: static/templates/changeProfile.html:22
+msgid "IfPasswordFieldIsEmptyItWontChange"
+msgstr ""
+
+#: static/templates/changeProfile.html:24 static/templates/install.html:8
+#: static/templates/login.html:16 static/templates/profile.html:21
+#: static/templates/profile.html:24 static/templates/register.html:19
+msgid "Username"
+msgstr "Erabiltzailea"
+
+#: static/templates/changeProfile.html:25 static/templates/install.html:9
+#: static/templates/login.html:17 static/templates/register.html:20
+msgid "Password"
+msgstr "Pasahitsa"
+
+#: static/templates/changeProfile.html:26 static/templates/install.html:10
+#: static/templates/register.html:21
+msgid "PasswordRepeat"
+msgstr "Pasahitsa berridatzi"
+
+#: static/templates/changeProfile.html:27 static/templates/install.html:11
+#: static/templates/profile.html:22 static/templates/profile.html:25
+#: static/templates/register.html:22 static/templates/users.html:14
+msgid "Email"
+msgstr "Email-a"
+
+#: static/templates/changeProfile.html:28 static/templates/register.html:23
+msgid "Register"
+msgstr "Erregistratu"
+
+#: static/templates/install.html:6
+msgid "AdminInstallAdvert"
+msgstr "Lehen aldiz zerbitsua instalatu behar da. Sartu administratzailearen informazioa"
+
+#: static/templates/install.html:12
+msgid "Install"
+msgstr "Instalatu"
+
+#: static/templates/login.html:7 static/templates/profile.html:7
+msgid "ChangeProfileEmailSend"
+msgstr "Profila modifikatzeko pausuak bidali dira korreora"
+
+#: static/templates/login.html:20
+msgid "ForgottenPassword"
+msgstr "Pasahitza ahaztu zait"
+
+#: static/templates/logout.html:6
+msgid "LogoutSuccessful"
+msgstr "Saioa ondo itxi da"
+
+#: static/templates/map.html:11
+msgid "SearchSite"
+msgstr "Lekua bilatu"
+
+#: static/templates/photo.html:2 static/templates/users.html:20
+msgid "Photo"
+msgstr "Argazkia"
+
+#: static/templates/photo.html:7
+msgid "WantToDeletePhoto"
+msgstr "Argazkia ezabatu nahi duzu?"
+
+#: static/templates/photo.html:8
+msgid "SetAsBackgroundQuestion"
+msgstr "Fondo moduan jarri nahi duzu argazkia?"
+
+#: static/templates/photo.html:9
+msgid "SetAsProfilePhotoQuestion"
+msgstr "Profil argazki moduan jarri nahi duzu?"
+
+#: static/templates/photo.html:22
+msgid "PhotoName"
+msgstr "Izena"
+
+#: static/templates/photo.html:27
+msgid "Public"
+msgstr "Publikoa"
+
+#: static/templates/photo.html:30
+msgid "RestrictedUsers"
+msgstr "Erabiltzaileei mugatuta"
+
+#: static/templates/photo.html:33
+msgid "Private"
+msgstr "Pribatua"
+
+#: static/templates/photo.html:66
+msgid "DeleteImage"
+msgstr "Argazkia ezabatu"
+
+#: static/templates/photo.html:72
+msgid "PhotoDoneBy"
+msgstr "Autorea"
+
+#: static/templates/photo.html:75
+msgid "PhotoDoneIn"
+msgstr "Data"
+
+#: static/templates/photo.html:78
+msgid "SetAsBackground"
+msgstr "Fondo moduan jarri"
+
+#: static/templates/photo.html:79
+msgid "SetAsProfilePhoto"
+msgstr "Profil argazki moduan jarri"
+
+#: static/templates/photos.html:12
+msgid "DropPhotoHere"
+msgstr "Argazkia jarri edo klik egin orrira igotzeko"
+
+#: static/templates/profile.html:28
+msgid "RequestChangeProfile"
+msgstr "Aldatu profila"
+
+#: static/templates/register.html:17
+msgid "ChangePasswordNeedsConfirmation"
+msgstr "Bi kanputan jarri behar da pasahitsa aldatzeko"
+
+#: static/templates/registered.html:2
+#, fuzzy
+msgid "Registered"
+msgstr "Erregistratu"
+
+#: static/templates/registered.html:10
+msgid "Hello"
+msgstr "Kaixo"
+
+#: static/templates/registered.html:10
+#, fuzzy
+msgid "AccountCreated"
+msgstr "Zure kontua sortu egin da."
+
+#: static/templates/registered.html:11
+#, fuzzy
+msgid "WelcomeToKaixoMundua"
+msgstr "Kaixo gure Kaixo Mundua web orrira!"
+
+#: static/templates/registered.html:12
+msgid "EmailSendForActivation"
+msgstr "Email bat bidali da kontua aktibatzeko"
+
+#: static/templates/users.html:11
+#, fuzzy
+msgid "Name"
+msgstr "Erabiltzailea"
+
+#: static/templates/users.html:17
+#, fuzzy
+msgid "RegisterDate"
+msgstr "Erregistro eguna"
+
+#: static/templates/users.html:26
+msgid "Blocked"
+msgstr "Blokeatuta"
+
+#: static/templates/welcome.html:2 static/templates/welcome.html:7
+#, fuzzy
+msgid "HelloWorld"
+msgstr "Kaixo mundua"
+
+#: static/templates/welcome.html:5
+msgid "HelloAgain"
+msgstr "Kaixo berriro"
+
+#~ msgid "Passwords do not match."
+#~ msgstr "Pasahitsak ez dira berdinak."
+
+#~ msgid ""
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "                            Public"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "                            RestrictedUsers"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "                            Private"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "                PhotoDoneBy"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "                PhotoDoneIn"
+#~ msgstr ""
+
